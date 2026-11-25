@@ -31,6 +31,15 @@ test("the game log says AutoTrimps Plus is running, with both versions", async (
   expect(log).toContain(`AutoTrimps Plus ${versions[0]} is running (with AutoTrimps ${versions[1]})`);
 });
 
+test("during a time warp (offline time) a log line waits, and shows once the time warp is over", async ({ page }) => {
+  await loadGame(page);
+  await page.evaluate(() => { usingRealTimeOffline = true; ATP.say("Test line after warp"); });
+  await page.waitForTimeout(1500);
+  expect(await page.locator("#log").innerText()).not.toContain("Test line after warp");
+  await page.evaluate(() => { usingRealTimeOffline = false; });
+  await expect(page.locator("#log")).toContainText("Test line after warp", { timeout: 5000 });
+});
+
 test("ATP.setSetting changes an AutoTrimps setting, saves it, and does nothing when it already has that value", async ({ page }) => {
   await loadGame(page);
   const result = await page.evaluate(() => {

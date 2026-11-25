@@ -13,10 +13,20 @@
 		console.log('[AutoTrimps Plus] ' + text);
 	};
 
-	// The game's message log, the way AutoTrimps writes its own lines (debug() with no type always shows).
+	// The game's message log, the way AutoTrimps writes its own lines (debug() with no type).
+	// AutoTrimps' debug() hides such lines while a time warp (offline time) runs, so they wait for its end.
+	var waiting = [];
 	ATP.say = function (text) {
+		if (typeof usingRealTimeOffline !== 'undefined' && usingRealTimeOffline) {
+			waiting.push(text);
+			return;
+		}
 		debug(text);
 	};
+	setInterval(function () {
+		if (!waiting.length || (typeof usingRealTimeOffline !== 'undefined' && usingRealTimeOffline)) return;
+		waiting.splice(0).forEach(function (text) { debug(text); });
+	}, 1000);
 
 	// Change an AutoTrimps setting. Only writes when the value differs, so AutoTrimps saves only on change.
 	// universe: 1 or 2 (settings that exist in both universes keep a separate value for each).

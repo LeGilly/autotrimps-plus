@@ -2,10 +2,11 @@
 
 ## Status
 - 0.1.0 written, not committed yet: the repo, AutoTrimps vendored (SadAugust v7.2.8, commit 0cf73d4,
-  unmodified, checksummed), the local loader, build, tests (6) and release workflow.
-- **To check once in the Steam game:** install the 0.1.0 zip, start Trimps, and confirm the log line
-  "AutoTrimps Plus 0.1.0 is running…" and that the AutoTrimps settings window works. The tests run the web
-  version in Chrome; only the Steam app shows that loading local files works there (NW.js).
+  unmodified, checksummed), the local loader, build, tests (7) and release workflow.
+- **Steam check (2026-11-25):** installed; AutoTrimps runs from the local folder in the Steam app (its
+  messages show, the installed mods.js is ours). The "AutoTrimps Plus … is running" line was hidden because
+  the game started with a time warp; fixed in 0.1.0 before committing (the line now waits for the warp's end).
+  Still to see once: that line, after copying the new `atp/atp_core.js` into the game.
 
 ## Next: Tier 1 of docs/AT_GAP_ANALYSIS.md (Universe 1)
 1. A full-run harness: the fake clock runs a new save at ~0.4 s real per game minute (an hour in ~25 s).

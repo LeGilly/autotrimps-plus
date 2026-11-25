@@ -44,7 +44,7 @@ The same as on Frozen Cookies Plus (its `MAINTAINING.md`, "How the owner works o
 |---|---|
 | `mods.js` | The loader, shipped as `Trimps\mods\mods.js`. Holds the version. Loads the libraries, AutoTrimps, `atp_boot.js`, in that order |
 | `src/atp_boot.js` | Runs right after `AutoTrimps2.js`: marks AutoTrimps' outside scripts as loaded so it skips them, then loads our files (`ATP_BOOT.scripts` in mods.js) once AutoTrimps is running |
-| `src/atp_core.js` | The `ATP` object: `ATP.setSetting` / `ATP.getSetting` (AutoTrimps' own `setPageSetting` / `getPageSetting`), `ATP.say` (game log), `ATP.log` (console) |
+| `src/atp_core.js` | The `ATP` object: `ATP.setSetting` / `ATP.getSetting` (AutoTrimps' own `setPageSetting` / `getPageSetting`), `ATP.say` (game log; waits while a time warp runs, as AutoTrimps' `debug()` would hide it), `ATP.log` (console) |
 | `vendor/autotrimps/` | AutoTrimps, SadAugust's fork, **unmodified**. `SOURCE.txt` gives the commit and a checksum per file |
 | `vendor/lib/` | jQuery 3.7.1 and select2 4.1.0-rc.0, with their licences |
 | `tools/build.mjs` | Builds `Steam/mods/` (as it goes into the game's `mods` folder) and `dist/autotrimps-plus-X.Y.Z.zip` |
@@ -94,7 +94,7 @@ commit `b9edb1d` = 5.10.1, the Steam version), then loads `Steam/mods/mods.js` i
 Every request outside localhost is refused, and noted once the mod has started.
 
 - `load.spec.mjs`: AutoTrimps and AT+ start from the mod folder with every module loaded and nothing fetched
-  from the internet; the log line with both versions; `ATP.setSetting`.
+  from the internet; the log line with both versions, held back during a time warp; `ATP.setSetting`.
 - `play.spec.mjs`: on a new save AutoTrimps traps Trimps, hires workers and fights within 3 game minutes.
 - `vendor.spec.mjs`: AutoTrimps' files match the checksums in `vendor/autotrimps/SOURCE.txt`.
 - `version.spec.mjs`: version, changelog and built files agree.
