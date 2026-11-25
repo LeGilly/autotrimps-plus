@@ -5,7 +5,7 @@
 (function () {
 	'use strict';
 
-	var ATP_LOADER = { version: '0.1.0' };
+	var ATP_LOADER = { version: '0.1.1' };
 
 	var here = document.currentScript && document.currentScript.src ? document.currentScript.src : 'mods/mods.js';
 	var base = here.replace(/[^/]*$/, '') + 'autotrimps-plus/';
