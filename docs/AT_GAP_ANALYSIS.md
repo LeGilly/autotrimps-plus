@@ -25,6 +25,13 @@ and almost all of those default to off or to a "-1 = not set" value:
   ("second to last Spire you reach", "your desired end zone", "highest tier available"), or no recommendation
   at all (mostly the per-challenge tables).
 
+## Status (0.2.0)
+
+Tier 1 is covered for Universe 1: the run planner (portal mode, challenge order, Dailies, voids through
+"Portal: After Voids"), Masteries, perks (autoPerks + presetSwap) and 77 recommended settings. Universe swap
+stays off (Universe 1 only). Correction to the table below: AutoTrimps already runs the unlock maps by default
+("Unique Map Unlocks"); only Imploding Star and Bionic Wonderland need settings.
+
 ## Tier 1: without these the run stops or stalls for good
 
 | Gap | AT default | What the autopilot has to decide |

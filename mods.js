@@ -5,7 +5,7 @@
 (function () {
 	'use strict';
 
-	var ATP_LOADER = { version: '0.1.1' };
+	var ATP_LOADER = { version: '0.2.0' };
 
 	var here = document.currentScript && document.currentScript.src ? document.currentScript.src : 'mods/mods.js';
 	var base = here.replace(/[^/]*$/, '') + 'autotrimps-plus/';
@@ -14,7 +14,7 @@
 		version: ATP_LOADER.version,
 		base: base,
 		// Our own files, loaded in this order once AutoTrimps has finished starting.
-		scripts: ['atp/atp_core.js']
+		scripts: ['atp/atp_core.js', 'atp/atp_settings.js', 'atp/atp_planner.js', 'atp/atp_masteries.js']
 	};
 
 	// As AutoTrimps' own mods.js does: hold offline progress until AutoTrimps is running (it restores the limit).

@@ -65,6 +65,52 @@ Prismatic Palace, Melting Point, Frozen Castle and Dimension of Rage are Univers
 To verify for each map: the drop entries' `specialFilter`/location confirm which map they belong to (the
 table follows the game's own messages and order). The Gigastation blueprints are a normal map drop from Z61.
 
+## When a challenge counts as done
+
+The game's own challenge list (main.js, the portal screen) marks a challenge done when the perk named in its
+`unlocks` field is owned (`isPerkUnlocked`), or by a flag for the others: `game.global.decayDone`,
+`frugalDone`, `slowDone`; Scientist by `game.global.sLevel` (0–5). AT+ uses the same tests. Each challenge's
+`filter()` says whether it can be picked now.
+
+## Where each unlock challenge ends (its description)
+
+The Block (Z11): Scientist, Trimp. Dimension of Anger (Z20): Discipline, Metal, Size, Frugal, Coordinate.
+Trimple Of Doom (Z33): Meditate, Trapper. Zone 55: Decay. The Prison (Z80): Mapocalypse. Zone 100: Mapology.
+Zone 120: Slow. Imploding Star (Z170): Devastation. Only Decay and Devastation end at the zone that opens
+them; Slow ends 10 below. AT+ starts each once the highest zone is 10 past its end.
+
+## Player recommendations used (not from the game code)
+
+- **Helium challenge thresholds**, by total helium (Steam discussion "Recommended Helium thresholds and farming
+  strategies", Oct 2022, https://steamcommunity.com/app/1877960/discussions/0/5595184948709690860):
+  Electricity 100K, Life 1M, Crushed 3M, Nom 10M, Toxicity 35M, Lead 80M + Headstart I, Corrupted 150M,
+  Domination 500M. Another discussion adds that Toxicity beats Lead until Headstart I.
+- **Mastery order:** the community list the owner shared (tiers 1–9), and for tier 10 the Helium-spec order of
+  "Trimps: Full Mastery or Dark Essence Guide" (2022, kosgames.com), whose tiers 7–9 match that list.
+
+## Repeatable helium challenges (bonus on all helium up to their zone)
+
+From the descriptions in config.js: Balance +100% (Z40), Electricity +200% (The Prison, Z80), Life +400%
+(Z110), Crushed +400% (Bionic Wonderland, Z125), Nom +450% (Z145), Toxicity +400% (Z165), Watch +200% and
+Lead +300% (Z180), Corrupted +200% (Z190), Domination +100% (Z215).
+
+## Dailies
+
+- Open in U1 at HZE ≥ 99. The last 7 days are available (`getDailyTimeString(-6)` … `(0)`); the ones done are
+  in `game.global.recentDailies` (`checkCompleteDailies()` drops older ones).
+- Reward: `getDailyHeliumValue`: between +100% and +500% helium for the run, from the modifiers' weight.
+
+## Masteries (game.talents)
+
+- 60 Masteries in 10 tiers of 6, bought with Dark Essence (`game.global.essence`); available from zone 181.
+  Ids for the community abbreviations: `fluffyExp` = Flufffocus, `fluffyAbility` = Flufffinity, `maz` = Map at
+  Zonier, `magimp` = Randimp, `daily` = Legs for Days, `quickGen` = Expert Gen.
+- Cost depends only on how many you own: `10 × 3^owned`, and from the 25th on `2,824,295,364,810 × 6^(owned−24)`
+  (`getNextTalentCost`).
+- A tier opens as the one below fills: with n owned in tier k, tier k+1 allows n − 1 (all 6 once tier k is full)
+  (`getAllowedTalentTiers`). Some need another first (`requires`, e.g. Void Power II needs I).
+- `completeTalentPurchase(talent)` is the game's own purchase (checks tier, requirements, cost).
+
 ## Universe 2
 
 - Opens when **Fluffy reaches Evolution 8, level 10** (or any level at evolution 9+): `Fluffy.checkU2Allowed()`
@@ -76,5 +122,9 @@ table follows the game's own messages and order). The Gigastation blueprints are
   `setPageSetting(id, value, universe)` (vendor/autotrimps/modules/utils.js), which saves all settings to
   `localStorage.atSettings`. Settings that exist in both universes keep a separate value for U2.
 - AutoTrimps writes to the game log through its own `debug(text, type)`. With no type the line always shows.
+- "Unique Map Unlocks" (on by default) already runs The Block, The Wall, Dimension of Anger, Trimple of Doom and
+  The Prison for their unlocks, and a challenge's completion map is run while that challenge is active
+  (`mapData.challenges` in mapFunctions.js).
+- In "Helium Per Hour" mode AutoTrimps shows a 4-second "Auto Portaling NOW" notice, then portals by itself.
 - On a new save, AutoTrimps with its defaults starts the game alone: traps, jobs, gathering, buildings and the
   first fights (checked headless, 2026-11-25). What it leaves to the player is in `docs/AT_GAP_ANALYSIS.md`.

@@ -1,25 +1,26 @@
-# AutoTrimps Plus — where we left off (2026-11-25)
+# AutoTrimps Plus — where we left off (2026-11-25, night)
 
 ## Status
-- 0.1.0 committed and released; 0.1.1 written (log line after a time warp), not committed yet. 0.1.0 has: the repo, AutoTrimps vendored (SadAugust v7.2.8, commit 0cf73d4,
-  unmodified, checksummed), the local loader, build, tests (7) and release workflow.
-- **Steam check (2026-11-25):** installed; AutoTrimps runs from the local folder in the Steam app (its
-  messages show, the installed mods.js is ours). The "AutoTrimps Plus … is running" line was hidden because
-  the game started with a time warp; with time warp off the line shows. Fixed in 0.1.1 (the line waits for
-  the warp's end). 0.1.1 installed and its line seen (2026-11-25). Reload in the Steam game: F5.
+- 0.1.1 committed and released (checked in the Steam game: AutoTrimps runs locally, the start line shows).
+- 0.2.0 written, not committed yet: the switch, the run planner, Masteries, 77 recommended settings. Tests (25).
 
-## Next: Tier 1 of docs/AT_GAP_ANALYSIS.md (Universe 1)
-1. A full-run harness: the fake clock runs a new save at ~0.4 s real per game minute (an hour in ~25 s).
-   Measure it deeper in the game, and add saves at fixed points (first portal, Z60, Z200) for the tests.
-2. Progress model: stages read from the save (HZE, challenges done, unlocks, C² totals).
-3. Settings from AutoTrimps' "Recommended:" lines (docs/at-settings-catalogue.csv), set by `ATP.setSetting`.
-4. Auto Portal mode and the challenge order (docs/GAME_NOTES.md has the U1 unlock table).
-5. Void maps and unique maps by zone.
-6. Masteries: purchase order (AutoTrimps never buys them). Read their costs and effects into GAME_NOTES first.
-7. Turn on autoPerks + presetSwap (AutoTrimps' Perky already picks presets by challenge and zone).
+## To watch in the game (0.2.0)
+- The log line "AT+: this run is …, next run: …" after each portal, and that AutoTrimps portals into it.
+- Unlock runs that stall (Trapper is slow by nature): the 2-hour rule should end them as normal runs.
+- Your own AutoTrimps settings in the outlined ones are replaced: expected. Heirloom settings are untouched
+  (the "Everything Staff" messages stay until heirlooms are handled).
+
+## Next (Universe 1)
+1. Heirlooms: pick and name the shield/staff per situation, swapping, keep/recycle (Tier 2).
+2. Farming tables: void map rows with zones, map bonus/HD farm by stage, Prestige climb, raiding (Tier 2).
+3. Golden upgrades order; Toxicity stack farming (AutoTrimps' Toxicity settings: farm stacks on the last zone).
+4. Optional: a time estimate for starting a challenge, from the zone times of previous runs.
+5. Nature tokens and Enlightenment; Fluffy evolution; Spire settings (Ignore until second to last Spire).
+6. C² runs (C2 runner) once the unlock runs are done.
+7. Spire TD (player Spire): build/upgrade a layout.
+8. A save at fixed points for long tests (the fake clock is too slow from a new save).
 
 ## Later
-- Tier 2 and 3 of the gap analysis (farming tables, golden upgrades, heirlooms, Spire TD…).
 - Achievement hunter: after a full automated run, list the achievements still missing and add what gets them.
 - Universe 2 (opens at Fluffy E8L10, see GAME_NOTES.md).
-- Hub listing (docs/HUB_BRIEF.md), once there's a first release.
+- Hub listing (docs/HUB_BRIEF.md).

@@ -16,11 +16,13 @@ Facts to describe this project on the hub. Check `CHANGELOG.md` for the current 
 - Repository: https://github.com/LeGilly/autotrimps-plus
 - Releases (zip per version, notes from the changelog): https://github.com/LeGilly/autotrimps-plus/releases
 
-## Features worth listing (as of 0.1.0)
+## Features worth listing (as of 0.2.0)
 
 - Runs AutoTrimps offline from the mod folder, nothing downloaded at launch.
-- Planned (not there yet, don't list as done): automatic portal and challenge choice, void and unique maps,
-  Masteries, settings that update themselves with progress, then an achievement hunter.
+- Plays Universe 1 by itself: picks every run (unlock challenges first, then Dailies, then the best helium
+  challenge), buys Masteries, keeps AutoTrimps' settings at their recommended values. One switch to turn it off.
+- Planned (not there yet, don't list as done): heirlooms, farming by stage, C² runs, Spire TD, Universe 2,
+  then an achievement hunter.
 
 ## Tone notes
 

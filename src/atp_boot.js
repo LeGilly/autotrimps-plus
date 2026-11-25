@@ -2,7 +2,7 @@
 // AutoTrimps would fetch jQuery, select2 and two add-ons (graphs, void map clarifier) from outside sites.
 // mods.js already loaded our local jQuery and select2, so all four are marked as loaded here and skipped,
 // and the select2 stylesheet from the CDN is skipped the same way (ours is in lib/).
-// Then, once AutoTrimps is running, our own files are loaded (ATP_BOOT.scripts).
+// Then, once AutoTrimps is running, our own files are loaded (ATP_BOOT.scripts), and ATP.ready set after the last.
 (function () {
 	'use strict';
 
@@ -16,7 +16,10 @@
 	boot.skippedExternal = skip;
 
 	function loadNext(i) {
-		if (i >= boot.scripts.length) return;
+		if (i >= boot.scripts.length) {
+			if (window.ATP) window.ATP.ready = true; // every AT+ file is in
+			return;
+		}
 		var script = document.createElement('script');
 		script.src = boot.base + boot.scripts[i];
 		script.onload = function () { loadNext(i + 1); };
