@@ -18,7 +18,7 @@ Download `autotrimps-plus-<version>.zip` from this repository's **Releases** pag
    `mods.js` that's already there**. That file is how the Steam version runs mods, so AutoTrimps Plus takes
    the place of whatever it loaded before (AutoTrimps from the internet, the Mod Loader…). AutoTrimps is
    included, so don't load it a second time.
-3. Start the game (or press Ctrl+R in it). The message log says
+3. Start the game (or press F5 in it, which reloads from the last save). The message log says
    *AutoTrimps Plus 0.1.1 is running (with AutoTrimps SadAugust v7.2.8)* (after the time warp, if the game
    starts with offline time).
 

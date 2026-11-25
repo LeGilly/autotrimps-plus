@@ -6,7 +6,7 @@
 - **Steam check (2026-11-25):** installed; AutoTrimps runs from the local folder in the Steam app (its
   messages show, the installed mods.js is ours). The "AutoTrimps Plus … is running" line was hidden because
   the game started with a time warp; with time warp off the line shows. Fixed in 0.1.1 (the line waits for
-  the warp's end). Still to see once: the line after a time warp, with 0.1.1 installed.
+  the warp's end). 0.1.1 installed and its line seen (2026-11-25). Reload in the Steam game: F5.
 
 ## Next: Tier 1 of docs/AT_GAP_ANALYSIS.md (Universe 1)
 1. A full-run harness: the fake clock runs a new save at ~0.4 s real per game minute (an hour in ~25 s).
