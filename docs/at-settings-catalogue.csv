@@ -1,0 +1,430 @@
+tab,id,type,universes,name,default_U1,default_U2,AT_recommendation
+Core,gatherType,multitoggle,1 2,Auto Gather: Off,1,1,Auto Gather: On
+Core,upgradeType,multitoggle,1 2,Buy Upgrades: Off,1,1,"Buy Upgrades: OnWhen running the Scientist challenge the following upgrades will be purchased: Battle, Miners, Coordination x9, Megamace, Bestplate."
+Core,trapTrimps,boolean,1 2,Trap Trimps,true,true,On whilst highest zone is below 30.
+Core,autoGoldenSettings,mazArray,1 2,Golden Upgrade Settings,[],[],
+Core,pauseScript,boolean,0,Pause AutoTrimps,false,null,
+Core,autoHeirlooms,boolean,1 2,Auto Allocate Heirlooms,false,false,On
+Core,autoPerks,boolean,1 2,Auto Allocate Perks,false,false,On
+Core,presetSwap,boolean,1 2,Perk Preset Swapping,false,false,On
+Core,presetCombatRespec,multitoggle,1 2,Trimple Respec: Off,[0],[0],Trimple Respec: Off
+Core,presetCombatRespecCell,value,1,Spire Respec Cell,-1,null,cell after your farming has finished.
+Core,presetSwapMutators,boolean,2,Preset Swap Mutators,null,false,On
+Core,universeSetting,multitoggle,0,Universe Settings: 1,0,null,
+Core,autoEggs,boolean,0,Auto Eggs,false,null,On
+Equipment,equipOn,boolean,1 2,Auto Equip,true,true,On
+Equipment,equipPortal,boolean,1 2,Auto Equip Portal,false,false,On
+Equipment,equipCutOffHD,value,1 2,AE: HD Cut-off,1,1,1
+Equipment,equipCutOffHS,value,1 2,AE: HS Cut-off,2.5,2.5,2.5
+Equipment,equipWeight,value,1 2,AE: Equip Weight,1,1,1
+Equipment,equipZone,multiValue,1 2,AE: Zone,[-1],[-1],999
+Equipment,equip2,boolean,1 2,AE: 2,true,true,On
+Equipment,equipPrestige,multitoggle,1 2,AE: Prestige: Maybe,2,2,AE: Prestige: Trimple
+Equipment,equipPrestigeTypes,boolean,1 2,AE: Prestige Types,false,false,6
+Equipment,equipPrestigePct,value,1 2,AE: Prestige Pct,6,6,6
+Equipment,equipShieldBlock,boolean,1,Buy Shieldblock,true,null,On until you can reach zone 40
+Buildings,warpstation,boolean,1,Warpstations,false,null,On
+Buildings,warpstationPct,value,1,Warpstation Percent,25,null,25
+Buildings,gigastationPct,value,1,Gigastation Percent,80,null,80
+Buildings,firstGigastation,value,1,First Gigastation,20,null,20
+Buildings,deltaGigastation,value,1,Delta Gigastation,2,null,2
+Buildings,autoGigas,boolean,1,Auto Gigastations,"""true""",null,On
+Buildings,autoGigaTargetZone,value,1,Custom Target Zone,-1,null,Current challenge end zone
+Buildings,autoGigaDeltaFactor,value,1,Custom Delta Factor,-1,null,1-2 for very quick runs. 5-10 for regular runs where you slow down at the end. 20-100+ for very pushy runs
+Buildings,autoGigaForceUpdate,action,1,Update Auto Gigastations,null,null,
+Buildings,advancedNurseries,boolean,1,Advanced Nurseries,true,null,On. Nurseries enabled and set to Up To: 0 and From: 230
+Buildings,advancedNurseriesMapCap,value,1,AN: Hits Survived Maps,-1,null,3
+Buildings,advancedNurseriesAmount,value,1,AN: Amount,2,null,2
+Buildings,advancedNurseriesIce,multitoggle,1,AN: Buy In Ice,0,null,AN: Buy In Ice
+Jobs,geneAssist,boolean,1,Gene Assist,false,null,On
+Jobs,geneAssistPercent,value,1,GA: Gene Assist %,1,null,1
+Jobs,geneAssistTimer,value,1,GA: Timer,-1,null,10
+Jobs,geneAssistTimerHard,value,1,GA: Hard Chall Timer,8,null,8
+Jobs,geneAssistTimerBleedVoids,value,1,GA: Bleed Voids,-1,null,6
+Jobs,geneAssistTimerElectricity,value,1,GA: Electricity Timer,2.5,null,2.5
+Jobs,geneAssistTimerSpire,value,1,GA: Spire Timer,-1,null,
+Jobs,geneAssistZoneBefore,value,1,GA: Before Z,-1,null,The zone where you stop 1 shotting in a new portal
+Jobs,geneAssistTimerBefore,value,1,GA: Before Z Timer,-1,null,2
+Jobs,geneAssistZoneAfter,value,1,GA: After Z,-1,null,The zone where you stop 1 shotting after using your GA: Timer setting in a new portal
+Jobs,geneAssistTimerAfter,value,1,GA: After Z Timer,-1,null,Your Anticipation perk timer
+Jobs,geneAssistTimerOneOff,value,1,GA: One Off Timer,-1,null,Use regular Gene Assist settings instead of this
+Jobs,geneAssistTimerSpireOneOff,value,1,GA: One Off Spire Timer,-1,null,Your Anticipation perk timer
+Jobs,geneAssistTimerC2,value,1,GA: C2 Timer,-1,null,Use regular Gene Assist settings instead of this
+Jobs,geneAssistTimerSpireC2,value,1,GA: C2 Spire Timer,-1,null,Your Anticipation perk timer
+Jobs,geneAssistTimerDaily,value,1,GA: Daily Timer,-1,null,2
+Jobs,geneAssistTimerDailyHard,value,1,GA: Daily Timer Hard,-1,null,2
+Jobs,geneAssistTimerSpireDaily,value,1,GA: Daily Spire Timer,-1,null,Your Anticipation perk timer
+Combat,autoFight,multitoggle,1 2,Better Auto Fight: Off,1,1,Better Auto Fight: On
+Combat,autoAbandon,multitoggle,1 2,Auto Abandon: Never,2,2,Auto Abandon: Smart
+Combat,ignoreCrits,multitoggle,1 2,Ignore Crits: None,1,1,Ignore Crits: Void Strength
+Combat,autoRoboTrimp,value,1,Auto Robotrimp,60,null,60
+Combat,forceAbandon,boolean,1,Trimpicide,true,null,On
+Combat,floorCritCalc,boolean,1 2,Calc: Never Crit,false,false,Off
+Combat,45stacks,boolean,1,Calc: Anticipation Stacks,true,null,On
+Combat,addPoison,boolean,1,Calc: Poison Debuff,true,null,On
+Combat,fullIce,boolean,1,Calc: Ice Debuff,true,null,On
+Combat,gammaBurstCalc,boolean,1 2,Calc: Gamma Burst,true,true,On
+Combat,frenzyCalc,boolean,2,Calc: Frenzy Uptime,null,true,On
+Combat,autoStance,multitoggle,1,Auto Stance: Off,1,null,Auto Stance
+Combat,autoLevelScryer,boolean,1,Auto Level Scryer,false,null,On
+Combat,scryerVoidMaps,boolean,1,Auto Stance: Void Scryer,true,null,"OnWhen running a Daily, the D: Auto Stance: Void Scryer setting will be used instead of this one."
+Combat,scryerVoidMapsDaily,boolean,1,Daily: Auto Stance: Void Scryer,false,null,On
+Combat,autoStanceScryer,boolean,1,Enable Scryer Stance,false,null,On
+Combat,scryerMinZone,value,1,Min Zone,60,null,60 or 181
+Combat,scryerMaxZone,value,1,Max Zone,999,null,9999
+Combat,scryerMinMaxWorld,multitoggle,1,Min & Max: Everywhere,1,null,World
+Combat,scryerDieZone,value,1,Die To Use Scryer,-1,null,-1
+Combat,scryerMaxHits,value,1,Max Hits,-1,null,100
+Combat,scryerEssenceOnly,boolean,1,Remaining Essence Only,false,null,On
+Combat,scryerMaps,multitoggle,1,Scry Maps: Never,2,null,Scry Maps: Maybe
+Combat,scryerSpire,multitoggle,1,Scry Spire: Never,2,null,Scry Spire: Maybe
+Combat,scryerWorld,multitoggle,1,Scry World: Never,2,null,Scry World: Maybe
+Combat,scryerCorrupted,multitoggle,1,Scry Corrupted: Never,2,null,Scry Corrupted: Maybe
+Combat,scryerHealthy,multitoggle,1,Scry Healthy: Never,2,null,Scry Healthy: Maybe
+Combat,autoStanceWind,boolean,1,Wind Stacking,false,null,On
+Combat,windStackingZone,value,1,Wind Stack Zone,999,null,"100 zones below portal zoneWhen running a Daily, the Daily: Wind Stack Zone version of this setting will be used instead of this one."
+Combat,windStackingRatio,value,1,Wind Stack H:D,-1,null,"1000When running a Daily, the Daily: Wind Stack H:D version of this setting will be used instead of this one."
+Combat,windStackingLiq,boolean,1,Wind Stack Liquification,false,null,"OffWhen running a Daily, the Daily: Wind Stack Liquification version of this setting will be used instead of this one."
+Combat,autoStanceWindDaily,boolean,1,Daily: Wind Stacking,false,null,On
+Combat,windStackingZoneDaily,value,1,Daily: Wind Stack Zone,-1,null,100 zones below portal zone
+Combat,windStackingRatioDaily,value,1,Daily: Wind Stack H:D,-1,null,1000
+Combat,windStackingLiqDaily,boolean,1,Daily: Wind Stack Liquification,false,null,Off
+Combat,equalityManagement,multitoggle,2,Auto Equality: Off,null,2,Auto Equality: Advanced
+Maps,autoMaps,multitoggle,1 2,Auto Maps: Off,1,1,Auto Maps: On
+Maps,autoMapsPortal,boolean,1 2,Auto Maps Portal,true,true,On
+Maps,autoMapsPriority,boolean,1 2,Auto Maps Priority,false,false,Off
+Maps,onlyPerfectMaps,boolean,1 2,Perfect Maps,false,false,Off
+Maps,autoMapsReroll,boolean,1 2,Auto Maps Reroll,true,true,On
+Maps,recycleExplorer,boolean,1 2,Recycle Pre-Explorers,false,false,Off
+Maps,hitsSurvived,value,1 2,Hits Survived,1.25,1.25,1.5
+Maps,mapBonusHealth,value,1 2,Map Bonus Health,10,10,10
+Maps,hitsSurvivedReset,multitoggle,1 2,Hits Survived Reset: Off,1,1,Hits Survived Reset: S
+Maps,mapBonusLevelType,boolean,1 2,HS/HD Map Bonus Type,false,false,On
+Maps,mapBonusRatio,value,1 2,Map Bonus HD Ratio,-1,-1,4
+Maps,mapBonusStacks,value,1 2,Map Bonus HD Ratio Stacks,10,10,10
+Maps,mapBonusMinLevel,value,1 2,Map Bonus Min Level,0,0,2 (when highest zone reached is below 100) otherwise 0
+Maps,mapBonusPrestige,boolean,1 2,Map Bonus Level Prestiges,false,false,On
+Maps,prestigeClimb,dropdown,1 2,Prestige Climb,"""Off""","""Off""",Dagadder
+Maps,prestigeClimbZone,value,1 2,PC: Force Prestige Z,-1,-1,The zone you start heavily slowing down
+Maps,prestigeClimbSkip,boolean,1 2,PC: Prestige Skip,false,false,Off
+Maps,prestigeClimbPriority,value,1 2,PC: Priority,1,1,1
+Maps,hdFarmSettings,mazArray,1 2,HS & HD Farm Settings,"[{""active"": false, ""jobratio"": ""-1"", ""mapCap"": 100}]","[{""active"": false, ""jobratio"": ""-1"", ""mapCap"": 100}]",
+Maps,voidMapSettings,mazArray,1 2,Void Map Settings,"[{""active"": false, ""hitsSurvived"": 1}]","[{""active"": false, ""hitsSurvived"": 1}]",
+Maps,boneShrineSettings,mazArray,1 2,Bone Shrine Settings,"[{""active"": false}]","[{""active"": false}]",
+Maps,worshipperFarmSettings,mazArray,2,Worshipper Farm Settings,null,"[{""active"": false}]",
+Maps,uniqueMapSettingsArray,mazArray,1 2,Unique Map Settings,"{""The Wall"": {""enabled"": false, ""zone"": 100, ""cell"": 0}, ""The Block"": {""enabled""","{""The Wall"": {""enabled"": false, ""zone"": 100, ""cell"": 0}, ""The Block"": {""enabled""",
+Maps,uniqueMapUnlocks,boolean,1 2,Unique Map Unlocks,true,true,On
+Maps,uniqueMapEnoughHealth,boolean,1 2,Unique Map Health Check,true,true,On
+Maps,mapBonusSettings,mazArray,1 2,Map Bonus Settings,"[{""active"": false, ""jobratio"": ""-1"", ""special"": ""0""}]","[{""active"": false, ""jobratio"": ""-1"", ""special"": ""0""}]",
+Maps,mapFarmSettings,mazArray,1 2,Map Farm Settings,"[{""active"": false}]","[{""active"": false}]",
+Maps,raidingSettings,mazArray,1 2,Raiding Settings,"[{""active"": false}]","[{""active"": false}]",
+Maps,bionicRaidingSettings,mazArray,1,Bionic Raiding Settings,"[{""active"": false}]",null,
+Maps,tributeFarmSettings,mazArray,2,Tribute & Met Farm Settings,null,"[{""active"": false}]",
+Maps,smithyFarmSettings,mazArray,2,Smithy Farm Settings,null,"[{""active"": false}]",
+Portal,autoPortalTimeout,boolean,1 2,Auto Portal Timeout,false,false,
+Portal,downloadSaves,boolean,1 2,Download Saves,false,false,
+Portal,portalRespec,multitoggle,1 2,Portal: Refresh Respec Off,0,0,Portal: Refresh Respec On
+Portal,autoPortalForce,infoclick,0,Force Auto Portal,null,null,
+Portal,autoPortal,dropdown,1 2,Auto Portal,"""Off""","""Off""",Helium Challenges until you reach zone 230 then Helium Per Hour
+Portal,heliumChallenge,dropdown,1 2,Challenge,"""None""","""None""",Last challenge available
+Portal,heliumHourChallenge,dropdown,1 2,Challenge,"""None""","""None""",Last challenge available
+Portal,heliumOneOffChallenge,dropdown,1 2,Challenge,"""None""","""None""",Last challenge available
+Portal,heliumC2Challenge,dropdown,1 2,C2,"""None""","""None""",
+Portal,autoPortalZone,value,1 2,Portal Zone,999,999,The zone you would like your run to end
+Portal,heliumHrDontPortalBefore,value,1 2,Don't Portal Before,-1,-1,The minimum zone you would like your run to reach
+Portal,heliumHrBuffer,value,1 2,He/Hr Buffer %,0,0,4
+Portal,heliumHrPortal,multitoggle,1 2,Portal: Immediately,0,0,Portal: After Voids
+Portal,heliumHrExitSpire,boolean,1 2,Exit Spires for Voids,false,false,On
+Portal,autoPortalUniverseSwap,boolean,1 2,Swap To Next Universe,false,false,Off
+Portal,c2Finish,value,1 2,C2 Abandon Zone,-1,-1,Zones ending with 0 for most C2 runs.
+Portal,c2RunnerStart,boolean,1 2,C2 Runner,false,false,On
+Portal,c2RunnerMode,multitoggle,1 2,C2 Runner: Percent,0,0,C2 Runner: Percent
+Portal,c2RunnerSettings,mazArray,1 2,C2 Runner Settings,{},{},
+Portal,c2RunnerEndMode,multitoggle,1 2,C2 Runner: End Challenge,1,1,C2 Runner: Portal
+Portal,dailyPortalStart,boolean,1 2,Auto Start Daily,false,false,Only on when you want to run dailies
+Portal,dailyPortal,multitoggle,1 2,Daily Portal: Off,0,0,Daily Portal: He/Hr
+Portal,dailyPortalZone,value,1 2,Daily: Portal Zone,999,999,The zone you would like your run to end
+Portal,dailyAbandonZone,value,1 2,Daily: Abandon Zone,999,999,The zone you would like your daily to end
+Portal,dailyDontPortalBefore,value,1 2,Daily: Don't Portal Before,999,999,The minimum zone you would like your run to reach
+Portal,dailyHeliumHrBuffer,value,1 2,Daily: He/Hr Buffer %,0,0,4
+Portal,dailyHeliumHrPortal,multitoggle,1 2,Daily Portal: Immediately,0,0,Portal: After Voids
+Portal,dailyHeliumHrExitSpire,boolean,1 2,Daily: Exit Spires for Voids,false,false,On
+Portal,dailyPortalFiller,boolean,1 2,Daily: Filler Run,false,false,Off
+Portal,dailyPortalPreviousUniverse,boolean,2,Daily: Previous Universe,null,false,Off
+Portal,dailyDontCap,boolean,1 2,Daily: Run When Capped,false,false,Off
+Portal,dailyDontCapAmt,value,1 2,Daily UWC: Amount,7,7,7
+Portal,dailySkip,multiTextValue,1 2,Skip Daily,[0],[0],
+Heirloom,heirloomSwapping,boolean,1 2,Heirloom Swapping,false,false,On
+Heirloom,heirloomMapSwap,boolean,1 2,Map Swap,false,false,On
+Heirloom,heirloomPostVoidSwap,boolean,1 2,Post Void Swap,false,false,On
+Heirloom,heirloomBreedAnticipation,boolean,1,Breed Anticipation Swap,false,null,Off
+Heirloom,heirloomVoidSwap,boolean,2,Void Plaguebringer Swap,null,false,Off
+Heirloom,heirloomCompressedSwap,boolean,2,Compressed Plaguebringer Swap,null,false,On
+Heirloom,heirloomPlaguebringer,textValue,2,Plaguebringer,null,"""undefined""",Plaguebringer heirloom
+Heirloom,heirloomSwapHDCompressed,value,2,Compressed Swap HD,null,-1,
+Heirloom,heirloomShield,boolean,1 2,Shields,false,false,On
+Heirloom,heirloomInitial,textValue,1 2,Initial,"""undefined""","""undefined""",a shield with void map drop chance
+Heirloom,heirloomAfterpush,textValue,1 2,Afterpush,"""undefined""","""undefined""",a shield without void map drop chance
+Heirloom,heirloomOneOff,textValue,1 2,One Off,"""undefined""","""undefined""",a shield without void map drop chance
+Heirloom,heirloomC3,textValue,1 2,C2,"""undefined""","""undefined""",a shield without void map drop chance
+Heirloom,heirloomVoid,textValue,1 2,Void,"""undefined""","""undefined""",damage heirloom
+Heirloom,heirloomBreed,textValue,1 2,Breed,"""undefined""","""undefined""",
+Heirloom,heirloomSwapHD,value,1 2,HD Ratio Swap,-1,-1,
+Heirloom,heirloomSwapZone,value,1 2,Swap Zone,-1,-1,
+Heirloom,heirloomSwapZoneOneOff,value,1 2,One Off Swap Zone,-1,-1,
+Heirloom,heirloomSwapZoneC3,value,1 2,C2 Swap Zone,-1,-1,
+Heirloom,heirloomSwapZoneDaily,value,1 2,Daily Swap Zone,-1,-1,
+Heirloom,heirloomSpire,textValue,1 2,Spire,"""undefined""","""undefined""",Damage+Health heirloom
+Heirloom,heirloomWindStack,textValue,1,Wind Stacking,"""undefined""",null,Plaguebringer heirloom
+Heirloom,heirloomCompressed,textValue,2,Compressed Enemies,null,"""undefined""",Highest damage heirloom
+Heirloom,heirloomStaff,boolean,1 2,Staffs,false,false,On
+Heirloom,heirloomStaffWorld,textValue,1 2,World,"""undefined""","""undefined""",High pet XP staff
+Heirloom,heirloomStaffMap,textValue,1 2,Map,"""undefined""","""undefined""",Resource efficiency heavy staff
+Heirloom,heirloomStaffVoid,textValue,1 2,Void,"""undefined""","""undefined""",Dedicated metal efficiency staff
+Heirloom,heirloomStaffFragment,textValue,1 2,Fragment,"""undefined""","""undefined""",Dedicated fragment efficiency and drop rate staff
+Heirloom,heirloomStaffFood,textValue,1 2,Savory Cache,"""undefined""","""undefined""",Dedicated food efficiency staff
+Heirloom,heirloomStaffWood,textValue,1 2,Wooden Cache,"""undefined""","""undefined""",Dedicated wood efficiency staff
+Heirloom,heirloomStaffMetal,textValue,1 2,Metal Cache,"""undefined""","""undefined""",Dedicated metal efficiency staff
+Heirloom,heirloomStaffScience,textValue,2,Research Cache,null,"""undefined""",Dedicated science efficiency staff
+Heirloom,heirloomAuto,boolean,1 2,Auto Heirlooms,false,false,On
+Heirloom,heirloomAutoTypeToKeep,multitoggle,1 2,Type To Keep: None,0,0,The type of heirlooms you need
+Heirloom,heirloomAutoRarityPlus,boolean,1 2,Rarity To Keep: Higher Tiers,false,false,On
+Heirloom,heirloomAutoModTarget,value,1 2,Mod Target Count,0,0,0
+Heirloom,heirloomAutoForceRun,action,1 2,Run Auto Heirlooms,null,null,
+Heirloom,heirloomAutoShield,boolean,1 2,Shields,false,false,
+Heirloom,heirloomAutoRareToKeepShield,dropdown,1 2,Rarity to Keep,"""Common""","""Common""",Highest tier available
+Heirloom,heirloomAutoModsShield,mazDefaultArray,0,Shield Modifiers,"{""Common"": [], ""Rare"": []}",null,
+Heirloom,heirloomAutoBlacklistShield,mazDefaultArray,0,Blacklist Shield Modifiers,"{""Common"": [], ""Rare"": []}",null,
+Heirloom,heirloomAutoStaff,boolean,1 2,Staffs,false,false,
+Heirloom,heirloomAutoRareToKeepStaff,dropdown,1 2,Rarity to Keep,"""Common""","""Common""",Highest tier available
+Heirloom,heirloomAutoModsStaff,mazDefaultArray,0,Staff Modifiers,"{""Common"": [], ""Rare"": []}",null,
+Heirloom,heirloomAutoBlacklistStaff,mazDefaultArray,0,Blacklist Staff Modifiers,"{""Common"": [], ""Rare"": []}",null,
+Heirloom,heirloomAutoCore,boolean,0,Cores,false,null,
+Heirloom,heirloomAutoRareToKeepCore,dropdown,0,Rarity to Keep,"""Common""",null,Highest tier available
+Heirloom,heirloomAutoModsCore,mazDefaultArray,0,Core Modifiers,"{""Basic"": []}",null,
+Heirloom,heirloomAutoBlacklistCore,mazDefaultArray,0,Blacklist Core Modifiers,"{""Basic"": []}",null,
+Heirloom,heirloomAutoCoreModTarget,value,1 2,Core Mod Target Count,0,0,0
+Challenges,balance,boolean,1 2,Balance,false,false,On
+Challenges,balanceDestack,value,1 2,B: HD Ratio,5,5,5
+Challenges,balanceZone,value,1 2,B: Zone,6,6,
+Challenges,balanceStacks,value,1 2,B: Stacks,20,20,20
+Challenges,balanceImprobDestack,boolean,1 2,B: Improbability Destack,false,false,On
+Challenges,buble,boolean,2,Bublé,null,false,
+Challenges,decay,boolean,1 2,Decay,false,false,On
+Challenges,decayStacksToPush,value,1 2,D: Stacks to Push,-1,-1,150
+Challenges,decayStacksToAbandon,value,1 2,D: Stacks to Abandon,-1,-1,400
+Challenges,life,boolean,1,Life,false,null,On
+Challenges,lifeZone,value,1,L: Zone,-1,null,100
+Challenges,lifeStacks,value,1,L: Stacks,-1,null,100
+Challenges,experience,boolean,1,Experience,false,null,On
+Challenges,experienceStartZone,value,1,E: Start Zone,-1,null,500 to start and lower over time
+Challenges,experienceStaff,textValue,1,E: Wonder Staff,"""undefined""",null,Dedicated pet xp staff
+Challenges,experienceEndZone,value,1,E: End Zone,-1,null,605 to start and increase over time
+Challenges,experienceEndBW,value,1,E: End BW,-1,null,605 to start and increase over time
+Challenges,experienceC2,boolean,1,E: Treat as One Off,false,null,On
+Challenges,toxicitySettings,mazArray,1,Toxicity Settings,"[{""active"": false}]",null,Setup to farm 1500 stacks on the last zone of the challenge.
+Challenges,archaeology,boolean,2,Archaeology,null,false,On
+Challenges,archaeologyBreedShield,textValue,2,A: Breed Shield,null,"""undefined""",
+Challenges,archaeologyString1,multiTextValue,2,A: String 1,null,"[""undefined""]",
+Challenges,archaeologyString2,multiTextValue,2,A: String 2,null,"[""undefined""]",
+Challenges,archaeologyString3,multiTextValue,2,A: String 3,null,"[""undefined""]",
+Challenges,quagmireSettings,mazArray,2,Quagmire Settings,null,"[{""active"": false}]",
+Challenges,archaeologySettings,mazArray,2,Archaeology Settings,null,"[{""active"": false}]",
+Challenges,insanitySettings,mazArray,2,Insanity Settings,null,"[{""active"": false}]",
+Challenges,alchemySettings,mazArray,2,Alchemy Settings,null,"[{""active"": false}]",
+Challenges,hypothermiaSettings,mazArray,2,Hypothermia Settings,null,"[{""active"": false}]",
+One Off,oneOffSharpTrimps,boolean,1 2,One Off Sharp Trimps,false,false,Off
+One Off,oneOffGoldenMaps,boolean,1 2,One Off Golden Maps,false,false,Off
+One Off,oneOffFiller,boolean,1 2,Run One Off's as Fillers,false,false,Off
+One Off,frigid,boolean,1,Frigid,false,null,On
+One Off,frigidSwapZone,value,1,F: Heirloom Swap Zone,-1,null,
+One Off,frigidAutoPortal,multitoggle,1,F: Portal On Finish: Off,0,null,
+One Off,mayhem,boolean,2,Mayhem,null,false,On
+One Off,mayhemDestack,value,2,M: HD Ratio,null,-1,10
+One Off,mayhemZone,value,2,M: Zone,null,-1,-1
+One Off,mayhemMapIncrease,value,2,M: Map Increase,null,-1,1
+One Off,mayhemMP,value,2,M: Melting Point,null,-1,
+One Off,mayhemSwapZone,value,2,M: Heirloom Swap Zone,null,-1,
+One Off,mayhemAutoPortal,multitoggle,2,M: Portal On Finish: Off,null,0,
+One Off,exterminate,boolean,2,Exterminate,null,false,On
+One Off,exterminateDisableMapping,boolean,2,E: Disable Mapping,null,false,On
+One Off,exterminateWorldStaff,textValue,2,E: World Staff,null,"""undefined""",
+One Off,pandemonium,boolean,2,Pandemonium,null,false,On
+One Off,pandemoniumDestack,value,2,P: HD Ratio,null,10,10
+One Off,pandemoniumZone,value,2,P: Destack Zone,null,-1,-1
+One Off,pandemoniumAE,multitoggle,2,P Auto Equip: Off,null,0,P Auto Equip: Large Metal Cache
+One Off,pandemoniumAEZone,value,2,P AE: Zone,null,-1,
+One Off,pandemoniumAERatio,value,2,P AE: HD Ratio,null,-1,
+One Off,pandemoniumStaff,textValue,2,P: Staff,null,"""undefined""",
+One Off,pandemoniumMP,value,2,P: Melting Point,null,-1,
+One Off,pandemoniumSwapZone,value,2,P: Heirloom Swap Zone,null,-1,
+One Off,pandemoniumAutoPortal,multitoggle,2,P: Portal On Finish: Off,null,0,
+One Off,desolation,boolean,2,Desolation,null,false,On
+One Off,desolationDestack,value,2,D: HD Ratio,null,-1,0.0001
+One Off,desolationZone,value,2,D: Zone,null,-1,-1
+One Off,desolationStacks,value,2,D: Stacks,null,-1,300
+One Off,desolationOnlyDestackZone,value,2,D: Only Destack Z,null,-1,20 below Desolation end zone or when you stop clearing your destacking maps.
+One Off,desolationSpecial,boolean,2,D: Hyperspeed 2 LMC,null,true,On
+One Off,desolationMP,value,2,D: Melting Point,null,-1,
+One Off,desolationStaff,textValue,2,D: World Staff,null,"""undefined""",
+One Off,desolationSwapZone,value,2,D: Heirloom Swap Zone,null,-1,
+One Off,desolationAutoPortal,multitoggle,2,D: Portal On Finish: Off,null,0,
+One Off,desolationMutatorPreset,boolean,2,D: Mutator Preset,null,false,
+C2,c2SharpTrimps,boolean,1 2,C2 Sharp Trimps,false,false,Off
+C2,c2GoldenMaps,boolean,1 2,C2 Golden Maps,false,false,Off
+C2,c2Filler,boolean,1 2,Run C2's as Fillers,false,false,Off
+C2,c2Table,infoclick,0,C2 Table,null,null,
+C2,duel,boolean,2,Duel,null,false,On
+C2,duelHealth,boolean,2,D: Force x10 Health,null,false,On
+C2,duelShield,textValue,2,D: Shield,null,"""undefined""",
+C2,trapper,boolean,1 2,Trapper,false,false,Off
+C2,trapperCoordStyle,multitoggle,1 2,T: Coords Owned,0,0,T: Coords Owned
+C2,trapperCoords,value,1 2,T: Coords,-1,-1,
+C2,trapperArmySize,value,1 2,T: Army Size,-1,-1,
+C2,trapperTrap,boolean,1 2,T: Disable Trapping,false,false,On
+C2,trapperArmyPct,value,1 2,T: Army Percent,-1,-1,1
+C2,trapperRespec,boolean,1 2,T: Carp Respec,false,false,On
+C2,trapperShield,textValue,1 2,T: Shield,"""undefined""","""undefined""",
+C2,trapperWorldStaff,textValue,1 2,T: World Staff,"""undefined""","""undefined""",
+C2,mapology,boolean,1,Mapology,false,null,On
+C2,mapologyPrestige,dropdown,1,M: Prestige,"""Bootboost""",null,Axeidic for push runs or Bootboost for speed runs
+C2,mapologyMapOverrides,boolean,1,Mapology Map Overrides,true,null,On
+C2,lead,boolean,1,Lead,false,null,On
+C2,wither,boolean,2,Wither,null,false,On
+C2,witherFarm,multitoggle,2,W: Farm: Off,null,0,On
+C2,witherMapLevel,multitoggle,2,W: Map Level: Negative,null,0,W: Map Level: Map Bonus
+C2,witherZones,multiValue,2,W: Wither Zone(s),null,[-1],
+C2,witherDisableMapping,boolean,2,W: Disable Withered Mapping,null,false,On
+C2,witherShield,textValue,2,W: Shield,null,"""undefined""",
+C2,witherMutatorPreset,boolean,2,W: Mutator Preset,null,false,
+C2,quest,boolean,2,Quest,null,false,On
+C2,questMapCap,value,2,Q: Map Cap,null,100,100
+C2,questSmithyZone,value,2,Q: Smithy Zone,null,999,Your desired end zone for Quest
+C2,questSmithyMaps,value,2,Q: Smithy Maps,null,100,100
+C2,questSmithySpire,value,2,Q: Spire Smithys,null,-1,20
+C2,questSkipZone,action,2,Q: Skip Quest,null,null,
+C2,storm,boolean,2,Storm,null,false,Off
+C2,stormMapHD,value,2,S: Storm Cloud Map HD,null,-1,50
+C2,stormZone,value,2,S: Zone,null,-1,6
+C2,stormStacks,value,2,S: Stacks,null,-1,10
+C2,stormDestackTo,value,2,S: Destack To,null,-1,0
+C2,berserk,boolean,2,Berserk,null,false,On
+C2,berserkDisableMapping,boolean,2,B: Disable Mapping,null,true,On
+C2,glass,boolean,2,Glass,null,false,On
+C2,glassFarm,multitoggle,2,G: Farm: Off,null,0,On
+C2,glassStacks,value,2,G: Stacks,null,-1,10
+C2,smithless,boolean,2,Smithless,null,false,On
+C2,smithlessFarmTime,value,2,S: Max Farm Time,null,-1,
+C2,smithlessMapBonus,boolean,2,S: Max Map Bonus,null,true,On
+Daily,heliumyPercent,value,1 2,Buy Heliumy %,-1,-1,-1.
+Daily,bloodthirstDestack,boolean,1 2,Bloodthirst Destack,true,true,On
+Daily,bloodthirstMaxStacks,boolean,2,Bloodthirst Time To Kill Check,null,true,On
+Daily,bloodthirstVoidMax,boolean,1 2,Void: Max Bloodthirst,false,false,On
+Daily,empowerAutoEquality,boolean,2,AE: Empower,null,true,On
+Daily,dailyMutatorPreset,boolean,2,D: Plagued Mutator Preset,null,false,
+Daily,mapOddEvenIncrement,boolean,1 2,Odd/Even Increment,false,false,On
+Daily,avoidEmpower,boolean,1,Avoid Empower,true,null,On
+Spire,spireIgnoreUntil,value,1 2,Ignore Spires Until,-1,-1,Second to last Spire you reach on your runs.
+Spire,spireExitCell,value,1 2,Exit After Cell,-1,-1,-1
+Spire,spireNurseries,value,1,Nurseries,-1,null,-1
+Spire,spireDominanceStance,boolean,1,Force Dominance Stance,false,null,Off
+Spire,spireMapBonus,boolean,1 2,Max Map Bonus,false,false,Off
+Spire,spireHitsSurvived,value,1 2,Hits Survived,-1,-1,10
+Spire,spireSkipMapping,boolean,1 2,Skip Spire Mapping*,false,false,Off
+Spire,spireIgnoreUntilOneOff,value,1 2,One Off: Ignore Spires Until,-1,-1,Second to last Spire you reach on your runs
+Spire,spireExitCellOneOff,value,1 2,One Off: Exit After Cell,-1,-1,-1
+Spire,spireNurseriesOneOff,value,1,One Off: Nurseries,-1,null,-1
+Spire,spireDominanceStanceOneOff,boolean,1,One Off: Force Dominance Stance,false,null,Off
+Spire,spireMapBonusOneOff,boolean,1 2,One Off: Max Map Bonus,false,false,Off
+Spire,spireHitsSurvivedOneOff,value,1 2,One Off: Hits Survived,-1,-1,10
+Spire,spireSkipMappingOneOff,boolean,1 2,One Off: Skip Spire Mapping*,false,false,Off
+Spire,spireIgnoreUntilC2,value,1 2,C2: Ignore Spires Until,-1,-1,Second to last Spire you reach on your runs
+Spire,spireExitCellC2,value,1 2,C2: Exit After Cell,-1,-1,-1
+Spire,spireNurseriesC2,value,1,C2: Nurseries,-1,null,-1
+Spire,spireDominanceStanceC2,boolean,1,C2: Force Dominance Stance,false,null,Off
+Spire,spireMapBonusC2,boolean,1 2,C2: Max Map Bonus,false,false,Off
+Spire,spireHitsSurvivedC2,value,1 2,C2: Hits Survived,-1,-1,10
+Spire,spireSkipMappingC2,boolean,1 2,C2: Skip Spire Mapping*,false,false,Off
+Spire,spireIgnoreUntilDaily,value,1 2,Daily: Ignore Spires Until,-1,-1,Second to last Spire you reach on your runs
+Spire,spireExitCellDaily,value,1 2,Daily: Exit After Cell,-1,-1,-1
+Spire,spireNurseriesDaily,value,1,Daily: Nurseries,-1,null,-1
+Spire,spireDominanceStanceDaily,boolean,1,Daily: Force Dominance Stance,false,null,Off
+Spire,spireMapBonusDaily,boolean,1 2,Daily: Max Map Bonus,false,false,Off
+Spire,spireHitsSurvivedDaily,value,1 2,Daily: Hits Survived,-1,-1,10
+Spire,spireSkipMappingDaily,boolean,1 2,Daily: Skip Spire Mapping*,false,false,Off
+Magma,autoGen,boolean,1,Auto Generator,false,null,On
+Magma,autoGenModeBefore,multitoggle,1,Start Gen Mode: Gain Mi,1,null,Start Gen Mode: Gain Mi
+Magma,autoGenFuelStart,value,1,Start Fuel Zone,0,null,
+Magma,autoGenFuelEnd,value,1,End Fuel Zone,0,null,
+Magma,autoGenModeAfter,multitoggle,1,End Gen Mode: Gain Mi,1,null,End Gen Mode: Gain Mi
+Magma,autoGenModeOneOff,multitoggle,1,One Off Gen Mode: Normal,1,null,One Off Fuel
+Magma,autoGenModeC2,multitoggle,1,C2 Gen Mode: Normal,1,null,C2 Fuel
+Magma,autoGenModeDaily,multitoggle,1,Daily Gen Mode: Normal,1,null,Daily Normal
+Magma,magmiteAutoFuel,boolean,1,Automate Fuel Zones,false,null,On
+Magma,magmiteFuelZones,value,1,Zones To Fuel,20,null,
+Magma,magmiteMinimize,boolean,1,Minimize Fuel Zones,false,null,On
+Magma,magmiteAutoFuelForceRun,action,1,Force Automate Fuel Zones,null,null,
+Magma,magmiteSpending,multitoggle,1,Spend Magmite: Off,0,null,Spend Magmite: Portal
+Magma,magmiteUpgradeRuns,value,1,Runs for Upgrades,2,null,2
+Magma,magmiteOneTimerRuns,value,1,Runs for One and Dones,2,null,2
+Nature,autoNature,boolean,1,Transfer Nature Tokens,false,null,On
+Nature,autoNatureThreshold,value,1,Token Threshold,-1,null,
+Nature,autoPoison,dropdown,1,Poison,"""Off""",null,
+Nature,autoWind,dropdown,1,Wind,"""Off""",null,
+Nature,autoIce,dropdown,1,Ice,"""Off""",null,
+Nature,autoEnlightenment,boolean,1,Enlightenment Automation,false,null,
+Nature,poisonEnlight,value,1,E: Poison (Filler),-1,null,
+Nature,windEnlight,value,1,E: Wind (Filler),-1,null,
+Nature,iceEnlight,value,1,E: Ice (Filler),-1,null,
+Nature,poisonEnlightOneOff,value,1,E: Poison (One Off),-1,null,
+Nature,windEnlightOneOff,value,1,E: Wind (One Off),-1,null,
+Nature,iceEnlightOneOff,value,1,E: Ice (One Off),-1,null,
+Nature,poisonEnlightC2,value,1,E: Poison (C2),-1,null,
+Nature,windEnlightC2,value,1,E: Wind (C2),-1,null,
+Nature,iceEnlightC2,value,1,E: Ice (C2),-1,null,
+Nature,poisonEnlightDaily,value,1,E: Poison (Daily),-1,null,
+Nature,windEnlightDaily,value,1,E: Wind (Daily),-1,null,
+Nature,iceEnlightDaily,value,1,E: Ice (Daily),-1,null,
+Fluffy,fluffyEvolve,boolean,1,Evolve Fluffy,false,null,Off
+Fluffy,fluffyMinZone,value,1,Fluffy: Min Zone,-1,null,0
+Fluffy,fluffyMaxZone,value,1,Fluffy: Max Zone,-1,null,999
+Fluffy,fluffyBP,value,1,Fluffy: Bone Portals,-1,null,1
+Fluffy,fluffyRespec,boolean,1,Fluffy: Respec on Evo,false,null,On
+Spire Assault,spireAssaultContracts,boolean,0,Auto Start Contracts,false,null,
+Spire Assault,spireAssaultPresets,mazDefaultArray,0,Item Presets,"""{\""Preset 1\"":{\""name\"":\""Preset 1\"",\""items\"":[],\""ringMods\"":[]},\""Preset 2\""",null,
+Spire Assault,spireAssaultSettings,mazArray,0,Spire Assault Settings,"[{""active"": false}]",null,
+Time Warp,timeWarpSpeed,boolean,0,Time Warp Support,true,null,
+Time Warp,timeWarpDisplay,boolean,0,Time Warp Display,false,null,On
+Time Warp,timeWarpFrequency,value,0,Time Warp Frequency,1,null,20
+Time Warp,timeWarpSaving,boolean,0,Time Warp Saving,false,null,On
+Time Warp,timeWarpForceSave,action,0,Time Warp Force Save,null,null,
+Time Warp,timeWarpToggleSpeed,action,0,Time Warp Toggle Speed,null,null,
+Display,displayEnhancedGrid,boolean,0,Enhance Grids,false,null,
+Display,displayPercentHealth,boolean,0,Percent Health,false,null,
+Display,displayAllSettings,boolean,0,Display All settings,false,null,
+Display,displayHideAutoButtons,mazDefaultArray,0,Hide Buttons and Info,"{""fight"": false, ""autoFight"": false, ""structure"": false, ""jobs"": false, ""gold"": ",null,
+Display,enableAFK,action,1 2,Go AFK Mode,null,null,
+Display,equipEfficientEquipDisplay,boolean,1 2,Highlight Efficient Equipment,false,false,On
+Display,buildingMostEfficientDisplay,boolean,1 2,Highlight Efficient Buildings,false,false,
+Display,shieldGymMostEfficientDisplay,boolean,1,Highlight Shields v Gyms,false,null,
+Display,sitInMaps,boolean,1 2,Sit In maps,false,false,Disabled
+Display,sitInMaps_Zone,value,1 2,SIM: Zone,-1,-1,
+Display,sitInMaps_Cell,value,1 2,SIM: Cell,-1,-1,
+Import Export,importAutoTrimps,infoclick,0,Import AutoTrimps,null,null,
+Import Export,exportAutoTrimps,infoclick,0,Export AutoTrimps,null,null,
+Import Export,downloadForDebug,action,0,Download Save For Debug,null,null,
+Import Export,updateReload,boolean,0,Auto Refresh For Updates,false,null,Off
+Import Export,defaultAutoTrimps,infoclick,0,Reset To Default,null,null,
+Import Export,disableAutoTrimpsSettings,infoclick,0,Disable All Settings,null,null,
+Import Export,profileSettings,mazArray,0,Profile Settings,[],null,
+Import Export,profileLastLoaded,infoclick,0,Load a Profile To Use,null,null,
+Help,helpIntroduction,action,0,Introduction Message,null,null,
+Help,helpResourceHour,action,0,Helium Per Hour,null,null,
+Help,helpAutoPortal,action,0,Auto Portal Info,null,null,
+Help,helpShieldGym,action,1,Shield & Gym Issues,null,null,
+Help,helpStatus,action,0,Auto Maps Status,null,null,
+Help,helpAutoMapsPriority,action,0,Auto Maps Priority,null,null,
+Help,helpPriorityOrder,action,0,Priority Order,null,null,
+Help,helpAutoLevel,action,0,Auto Level Table,null,null,
+Help,helpFragments,action,0,Fragment Decisions,null,null,
+Help,helpDonate,action,0,Donate,null,null,

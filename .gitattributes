@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.png binary
+# AutoTrimps is kept byte for byte as SadAugust publishes it (CRLF); tests/vendor.spec.mjs checks the checksums
+vendor/autotrimps/** -text

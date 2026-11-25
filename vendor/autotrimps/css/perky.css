@@ -1,0 +1,78 @@
+/* Portal Screen CSS overrides */
+#titleRow {
+	height: 4.7vw;
+	margin-bottom: 0.5vw;
+}
+
+#portalHelium {
+	font-size: 1.7vw;
+	line-height: 1.8vw;
+}
+
+#portalTotalPortals,
+#portalTotalSpent,
+#portalTotalHelium {
+	font-size: 1.3vw;
+	line-height: 1.4vw;
+}
+
+#portalTitle {
+	width: 100%;
+	font-size: 3vw;
+	text-align: center;
+	margin-top: 0.9vw;
+}
+
+.inPortalBtn {
+	font-size: 1.3vw !important;
+}
+
+.portalThing {
+	width: 19.3%;
+	font-size: 1.231vw;
+}
+
+.portalThing.detailed {
+	font-size: 0.75vw;
+	line-height: 0.85vw;
+}
+
+.customRatios {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 0.5vw;
+	margin-left: 0.35vw;
+}
+
+.customRatiosContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+span.textbox {
+	align-items: center;
+	vertical-align: middle;
+	padding-left: 0.25vw;
+	margin-right: 0.7vw;
+	line-height: 1.3vw;
+	min-width: 13.5vw;
+	max-width: 13.5vw;
+	font-size: 0.8vw;
+	color: #888;
+	height: 1vw;
+	border: 1px solid rgb(119, 119, 119);
+	background-color: #000000;
+	align-items: center;
+}
+
+span.textbox input {
+	height: calc(1vw - 2px);
+	border: 0px;
+	background-color: #000000;
+	border: 0px black solid;
+}
